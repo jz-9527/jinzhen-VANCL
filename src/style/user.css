@@ -1,0 +1,242 @@
+#header {
+  padding-top: 15px;
+}
+#header .headers {
+  display: block;
+  height: 60px;
+}
+#header .headers .index {
+  display: block;
+  float: left;
+}
+#header .headers .help {
+  display: block;
+  float: right;
+  color: #000;
+  font-size: 14px;
+  margin-top: 24px;
+}
+#main .container {
+  padding-bottom: 20px;
+  border: 1px solid;
+  border-color: #000 transparent #686868 transparent;
+}
+#main .container .p {
+  text-align: right;
+  padding-top: 50px;
+}
+#main .container .p h3 {
+  font-size: 22px;
+  color: #979797;
+  font-weight: bolder;
+  height: 25px;
+  line-height: 25px;
+  margin: 0 100px 0 0;
+  width: 400px;
+  display: inline-block;
+}
+#main .container .p span {
+  display: inline-block;
+  color: #8d8c8c;
+}
+#main .container .p a {
+  display: inline-block;
+  color: red;
+  margin-right: 100px ;
+}
+#main .container .main_s {
+  overflow: hidden;
+  margin-top: 20px ;
+}
+#main .container .main_s .denglu-left {
+  float: left;
+  margin-left: 100px;
+}
+#main .container .main_s .denglu-right {
+  float: right;
+  border: 1px solid #ccc;
+  margin-right: 90px;
+}
+#main .container .main_s .denglu-right ul {
+  padding: 0;
+  height: 40px;
+}
+#main .container .main_s .denglu-right ul .denglu {
+  width: 200px;
+  height: 40px;
+  float: left;
+  padding: 0;
+  border: 0;
+  text-align: center;
+  line-height: 40px;
+  color: #936565;
+  background-color: #f5f5f5;
+}
+#main .container .main_s .denglu-right ul .active {
+  color: #fff;
+  background-color: #b42025;
+}
+#main .container .main_s .denglu-right .pu {
+  display: none;
+  position: relative;
+}
+#main .container .main_s .denglu-right .pu p {
+  padding: 20px 15px 0 15px;
+  margin-bottom: 0;
+}
+#main .container .main_s .denglu-right .pu p .user {
+  height: 45px;
+  width: 360px;
+}
+#main .container .main_s .denglu-right .pu p .pass {
+  height: 45px;
+  width: 360px;
+  margin-bottom: 20px;
+}
+#main .container .main_s .denglu-right .pu .slip {
+  display: none;
+  height: 16px;
+  position: absolute;
+  top: 130px;
+  left: 15px;
+  font-size: 14px;
+  line-height: 14px;
+  color: red;
+  background-color: #ffcaca;
+  border: 1px solid #b47d7d;
+}
+#main .container .main_s .denglu-right .pu .lod {
+  display: block;
+  text-align: right;
+  font-weight: 800;
+  font-size: 14px;
+  padding-right: 20px;
+  color: #b42025;
+}
+#main .container .main_s .denglu-right .pu .simbit {
+  width: 360px;
+  height: 40px;
+  background-color: #b42025;
+  color: #fff;
+  border: 0;
+  margin: 5px 0 30px 15px;
+}
+#main .container .main_s .denglu-right .kuai {
+  display: none;
+}
+#main .container .main_s .denglu-right .kuai p {
+  padding: 0 15px 15px 15px;
+  margin-bottom: 0;
+}
+#main .container .main_s .denglu-right .kuai p .phone {
+  width: 250px;
+  height: 45px;
+}
+#main .container .main_s .denglu-right .kuai p .phones {
+  height: 45px;
+  border: 1px solid #ccc;
+  background-color: #f5f5f5;
+  color: #b42025;
+}
+#main .container .main_s .denglu-right .kuai p .note {
+  width: 150px;
+  height: 45px;
+  float: left;
+}
+#main .container .main_s .denglu-right .kuai p img {
+  height: 45px;
+  float: left;
+}
+#main .container .main_s .denglu-right .kuai p .notes {
+  float: left;
+  color: #000;
+}
+#main .container .main_s .denglu-right .kuai p .notes:hover {
+  color: red;
+}
+#main .container .main_s .denglu-right .kuai p .phone_note {
+  width: 360px;
+  height: 45px;
+}
+#main .container .main_s .denglu-right .kuai .img_note {
+  overflow: hidden;
+}
+#main .container .main_s .denglu-right .kuai .simbit {
+  width: 360px;
+  height: 40px;
+  background-color: #b42025;
+  color: #fff;
+  border: 0;
+  margin: 5px 0 30px 15px;
+}
+#main .container .main_s .denglu-right .show {
+  display: block;
+}
+#main .container .main_s .denglu-right hr {
+  border-top: 1px dashed #ccc;
+}
+#main .container .main_s .denglu-right h5 {
+  color: #a4a4a4;
+  line-height: 14px;
+  font-size: 14px;
+  font-weight: bolder;
+  text-indent: 15px;
+}
+#main .container .main_s .denglu-right .cooperatiop {
+  margin-left: 15px;
+}
+#main .container .main_s .denglu-right .cooperatiop a {
+  display: inline-block;
+  height: 33px;
+  width: 40px;
+  background-image: url(../images/logos.jpg);
+  background-repeat: no-repeat;
+}
+#main .container .main_s .denglu-right .cooperatiop .g {
+  background-position: 0px;
+}
+#main .container .main_s .denglu-right .cooperatiop .g1 {
+  background-position: -146px;
+}
+#main .container .main_s .denglu-right .cooperatiop .g2 {
+  background-position: -48px;
+}
+#main .container .main_s .denglu-right .cooperatiop .g3 {
+  background-position: -188px;
+}
+#main .container .main_s .denglu-right .cooperatiop .g4 {
+  background-position: -228px;
+}
+#main .container .main_s .denglu-right .cooperatiop .g5 {
+  background-position: -93px;
+}
+#foot {
+  text-align: center;
+  padding-top: 10px;
+}
+#foot .center {
+  font-size: 14px;
+  color: #ccc;
+}
+#foot a {
+  display: inline-block;
+  height: 45px;
+  width: 114px;
+  margin: 0 5px;
+  background-image: url(../images/login_spritesbg.png);
+  background-repeat: no-repeat;
+}
+#foot .f1 {
+  background-position: 0 -401px;
+}
+#foot .f2 {
+  width: 157px;
+  background-position: 0 -448px;
+}
+#foot .f3 {
+  width: 98px;
+  background-position: 0 -493px;
+}
+#foot .f4 {
+  background-position: -100px -493px;
+}
