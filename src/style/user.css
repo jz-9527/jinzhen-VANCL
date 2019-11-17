@@ -62,6 +62,7 @@
   height: 40px;
 }
 #main .container .main_s .denglu-right ul .denglu {
+  list-style-type: none;
   width: 200px;
   height: 40px;
   float: left;

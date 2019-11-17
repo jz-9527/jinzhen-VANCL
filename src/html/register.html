@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style/login.css">
+</head>
+
+<body>
+        <header id="header">
+                <div class="container headers">
+                    <a href="./index.html" title="首页" class="index">
+                        <img src="../images/logo18546.png" alt="凡客诚品">
+                    </a>
+                </div>
+            </header>
+        
+            <section id="main">
+                <div class="container">
+                    <div class="p">
+                        <h3>注册新用户</h3>
+                        <span>我已经注册，现在就</span>
+                        <a href="./user.html">登录</a>
+                    </div>
+                    <div class="main_s">
+                        <a href="#" class="denglu-left"><img src="../images/denglu.jpg" alt="凡客诚品"></a>
+                        <div class="denglu-right">
+                            <p>
+                                <input type="text" placeholder="验证码" class="verification_code">
+                                <img src="../images/CalculateValidateCode.jpg" alt="验证码">
+                                <span class="sp1 show">请输入右边图片中的验证码</span>
+                            </p>
+                            <p>
+                                <input type="text" placeholder="请输入手机号" class="phone">
+                                <button class="get_code">获取短信验证码</button>
+                                <span class="sp2">请输入真实的手机号，并进行验证</span>
+                            </p>
+                            <p>
+                                <input type="text" placeholder="填写手机验证码" class="code">
+                                <span class="sp3">请输入手机收到的验证码</span>
+                            </p>
+                            <p>
+                                <input type="password" placeholder="设定登录密码" class="pass">
+                                <span class="sp4">6-16位字符，可使用字母，数字或者符号的组合</span>
+                            </p>
+                            <p>
+                                <input type="password" placeholder="再次输入密码" class="pass">
+                                <span class="sp5">请再次输入登录密码，两次输入必须一致</span>
+                            </p>
+                            <p>
+                                <input type="checkbox" class="box">
+                                <span class="sp6">请阅读</span>
+                                <a href="#">《VANCL凡客诚品服务条款》</a>
+                            </p>
+                            <button class="reg ">立即注册</button>
+                        </div>
+        
+                    </div>
+                </div>
+            </section>
+        
+            <footer id="foot">
+                <p class="center">
+                    如果上天能够给我一个再来一次的机会，我会对那个女孩子说三个字:我爱你。如果非要在这份爱上加上一个期限，我希望是……一万年!
+                </p>
+                <a href="./sham.html" class="f1"></a>
+                <a href="./sham.html" class="f2"></a>
+                <a href="./sham.html" class="f3"></a>
+                <a href="./sham.html" class="f4"></a>
+            </footer>
+
+    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../../node_modules/requirejs/require.js" data-main="../js/login.js"></script>
+</body>
+
+</html>
