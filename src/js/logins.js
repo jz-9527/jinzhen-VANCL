@@ -12,6 +12,7 @@ define(['jquery'], function($) {
                 dataType: "json",
                 success: function (response) {
                     console.log(response);
+                    //location.href='../html/user.html';
                 },
                 error:function (err) {
                     return err;

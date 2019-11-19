@@ -6,11 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap 101 Template</title>
-    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../style/index.css">
-    <script src="../../node_modules/requirejs/require.js" data-main="../js/index.js"></script>
 </head>
 
 <body>
@@ -19,9 +16,9 @@
         <div class="container">
             <div class="headers nav">
                 <p class="text-muted">您好，欢迎光临凡客诚品！</p>
-                <a href="./user.html">登录</a>
+                <a href="./user.html" class="register">登录</a>
                 <span></span>
-                <a href="#">注册</a>
+                <a href="./register.html" class="login">注册</a>
                 <a href="#">我的订单</a>
                 <a href="#"><img src="../images/notice.png">网站公告</a>
                 <a href="#" class="vx"><img src="../images/w1.jpg" alt=".."></a>
@@ -237,25 +234,283 @@
     <!-- 页面主体 -->
     <section id="main">
         <div class="container">
-            <a href="#" class="t_100">
-                <img src="../images/100.jpg" alt="充100送100">
-            </a>
-            <a href="#" class="miaosha">
-                <img src="../images/mm.jpg" alt="限时秒杀">
-                <span class="text">秒杀进行中，距离结束还有</span>
-                <span class="hour">10</span>
-                <span class="minute">10</span>
-                <span class="second">59</span>
-            </a>
-            <ul class="discounts">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
+            <div class="row">
+                <a href="#" class="t_100">
+                    <img src="../images/100.jpg" alt="充100送100">
+                </a>
+                <a href="#" class="miaosha">
+                    <img src="../images/mm.jpg" alt="限时秒杀">
+                    <span class="text">秒杀进行中，距离结束还有</span>
+                    <span class="hour">10</span>
+                    <span class="minute">10</span>
+                    <span class="second">59</span>
+                </a>
+                <div class="discounts">
+                    <a href="">
+                        <img src="../images/discounts1.jpg" alt="牛角扣大衣">
+                        <span class="commodity_name">凡客强缩绒牛角扣大衣 女款 藏蓝色</span>
+                        <del>￥1398</del>
+                        <span class="vip_price">充值后<h3>459</h3>元</span>
+                        <span class="now"><strong>￥</strong>918</span>
+                    </a>
+                    <a href="">
+                        <img src="../images/discounts1.jpg" alt="牛角扣大衣">
+                        <span class="commodity_name">凡客强缩绒牛角扣大衣 女款 藏蓝色</span>
+                        <del>￥1398</del>
+                        <span class="vip_price">充值后<h3>459</h3>元</span>
+                        <span class="now"><strong>￥</strong>918</span>
+                    </a>
+                    <a href="">
+                        <img src="../images/discounts1.jpg" alt="牛角扣大衣">
+                        <span class="commodity_name">凡客强缩绒牛角扣大衣 女款 藏蓝色</span>
+                        <del>￥1398</del>
+                        <span class="vip_price">充值后<h3>459</h3>元</span>
+                        <span class="now"><strong>￥</strong>918</span>
+                    </a>
+                    <a href="">
+                        <img src="../images/discounts1.jpg" alt="牛角扣大衣">
+                        <span class="commodity_name">凡客强缩绒牛角扣大衣 女款 藏蓝色</span>
+                        <del>￥1398</del>
+                        <span class="vip_price">充值后<h3>459</h3>元</span>
+                        <span class="now"><strong>￥</strong>918</span>
+                    </a>
+                </div>
+                <a href="#" class="more">
+                    <img src="../images/xhsm_g.jpg" alt="" class="more">
+                </a>
+                <div class="new_Products">
+                    <a href="#">
+                        <img src="../images/xp_03.jpg" alt="日式免烫">
+                    </a>
+                    <a href="#">
+                        <img src="../images/xp_03.jpg" alt="日式免烫">
+                    </a>
+                    <a href="#">
+                        <img src="../images/xp_03.jpg" alt="日式免烫">
+                    </a>
+                    <a href="#">
+                        <img src="../images/xp_03.jpg" alt="日式免烫">
+                    </a>
+                    <a href="#">
+                        <img src="../images/xp_03.jpg" alt="日式免烫">
+                    </a>
+                    <a href="#">
+                        <img src="../images/xp_03.jpg" alt="日式免烫">
+                    </a>
+                    <a href="#">
+                        <img src="../images/xp_03.jpg" alt="日式免烫">
+                    </a>
+                    <a href="#">
+                        <img src="../images/xp_03.jpg" alt="日式免烫">
+                    </a>
+                    <a href="#">
+                        <img src="../images/xp_03.jpg" alt="日式免烫">
+                    </a>
+                    <a href="#">
+                        <img src="../images/xp_03.jpg" alt="日式免烫">
+                    </a>
+                    <a href="#">
+                        <img src="../images/xp_03.jpg" alt="日式免烫">
+                    </a>
+                    <a href="#">
+                        <img src="../images/xp_03.jpg" alt="日式免烫">
+                    </a>
+                </div>
+
+                <h4>优选推荐</h4>
+                <div class="upper-outer-garment">
+                    <div class="first">
+                        <a href="">
+                            <img src="../images/pc01.jpg" alt="">
+                        </a>
+                        <div>
+                            <span>4.0日式免烫衬衫</span>
+                            <a href="">充值购买更优惠</a>
+                        </div>
+                    </div>
+                    <div class="two">
+                        <div class="two">
+                            <a href="">
+                                <img src="../images/pc02.jpg" alt="">
+                            </a>
+                            <div>
+                                <span>法兰绒衬衫</span>
+                                <a href="">充值购买相当于99元</a>
+                            </div>
+                        </div>
+                        <div class="two">
+                            <a href="">
+                                <img src="../images/wy.jpg" alt="">
+                            </a>
+                            <div>
+                                <span>卫衣</span>
+                                <a href="">充值购买相当于79元起</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="three">
+                        <a href="">
+                            <img src="../images/pc02 (1).jpg" alt="">
+                        </a>
+                        <div>
+                            <span>户外运动</span>
+                            <a href="">充值购买更优惠</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="upper-outer-garment">
+                    <div class="first">
+                        <a href="">
+                            <img src="../images/04g.jpg" alt="">
+                        </a>
+                        <div>
+                            <span>牛津纺</span>
+                            <a href="">充值购买相当于69元起</a>
+                        </div>
+                    </div>
+                    <div class="two">
+                        <div class="two">
+                            <a href="">
+                                <img src="../images/05.jpg" alt="">
+                            </a>
+                            <div>
+                                <span>商务休闲鞋</span>
+                                <a href="">充值购买相当于499元</a>
+                            </div>
+                        </div>
+                        <div class="two">
+                            <a href="">
+                                <img src="../images/pc04.jpg" alt="">
+                            </a>
+                            <div>
+                                <span>凡客新品</span>
+                                <a href="">充值购买相当于99元起</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="three">
+                        <a href="">
+                            <img src="../images/pc01 (1).jpg" alt="">
+                        </a>
+                        <div>
+                            <span>冬季新品</span>
+                            <a href="">1件8折 2件7折</a>
+                        </div>
+                    </div>
+                </div>
+                <h4>下装推荐</h4>
+                <div class="trousers">
+                    <div class="first">
+                        <a href="">
+                            <img src="../images/pc06.jpg" alt="">
+                        </a>
+                        <div>
+                            <span>休闲裤</span>
+                            <a href="">充值购买相当于49元起</a>
+                        </div>
+                    </div>
+                    <div class="first">
+                        <a href="">
+                            <img src="../images/10.jpg" alt="">
+                        </a>
+                        <div>
+                            <span>低裆锥型 轻弹</span>
+                            <a href="">充值购买相当于99元起</a>
+                        </div>
+                    </div>
+                    <div class="first">
+                        <a href="">
+                            <img src="../images/09.jpg" alt="">
+                        </a>
+                        <div>
+                            <span>牛仔裤</span>
+                            <a href="">充值购买相当于69元起</a>
+                        </div>
+                    </div>
+                    <div class="first">
+                        <a href="">
+                            <img src="../images/pc07.jpg" alt="">
+                        </a>
+                        <div>
+                            <span>重水洗锥形窄脚</span>
+                            <a href="">充值购买相当于69元起</a>
+                        </div>
+                    </div>
+                </div>
+                <h4>更多精品</h4>
+                <div class=" boutique ">
+                    <a href="">
+                        <img src="../images/11.jpg" alt="凡客">
+                    </a>
+                    <a href="">
+                        <img src="../images/g13.jpg" alt="凡客">
+                    </a>
+                    <a href="">
+                        <img src="../images/g13 (1).jpg" alt="凡客">
+                    </a>
+                    <a href="">
+                        <img src="../images/14.jpg" alt="凡客">
+                    </a>
+                    <a href="">
+                        <img src="../images/15.jpg" alt="凡客">
+                    </a>
+                    <a href="">
+                        <img src="../images/16g.jpg" alt="凡客">
+                    </a>
+                </div>
+                <div class="after_sale">
+                    <a href="">
+                        <img src="../images/onlinecustomer.png" alt="客服在线">
+                        <span>7x9小时在线客服</span>
+                    </a>
+                    <a href="" class="con">
+                        <img src="../images/seven.png" alt="售后服务">
+                        <p>7天内退货</p>
+                        <p>购物满199免运费</p>
+                    </a>
+                    <a href="" class="client-side">
+                        <img src="../images/2014_8_29_16_39_33_7709.jpg" alt="下载客户端">
+                        <p>扫描下载凡客客户端</p>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="./sham.html">关于凡客</a>
+                        </li>
+                        <li>
+                            <a href="./sham.html">新手指南</a>
+                        </li>
+                        <li>
+                            <a href="./sham.html">配送范围及时间</a>
+                        </li>
+                        <li>
+                            <a href="./sham.html">支付方式</a>
+                        </li>
+                        <li>
+                            <a href="./sham.html">售后服务</a>
+                        </li>
+                        <li class="last">
+                            <a href="./sham.html">帮助中心</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
+
+    <hr>
+    <footer id="footer">
+        <p>Copyright 2007 - 2019 vancl.com All Rights Reserved 京ICP证100557号 京公网安备11011502002400号 出版物经营许可证新出发京批字第直110138号</p>
+        <p>凡客诚品（北京）科技有限公司</p>
+        <div>
+            <a href="#" class="f1"></a>
+            <a href="#"class="f2"></a>
+            <a href="#"class="f3"></a>
+            <a href="#"class="f4"></a>
+        </div>
+    </footer>
+    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../../node_modules/requirejs/require.js" data-main="../js/index.js"></script>
 </body>
 
 </html>
