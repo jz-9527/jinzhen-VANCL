@@ -5,7 +5,7 @@ let baseUrl = 'http://127.0.0.1:8080/H1910/test/VANCL.com';
 //3.拿到数据
 define(['jquery', 'cookie'], function ($, cookie) {
     return {
-        get: function (phone, pass) {
+        getUser: function (phone, pass) {
             if (phone.length != 0 && pass.length != 0) {
                 $.ajax({
                     type: 'get',
@@ -17,10 +17,10 @@ define(['jquery', 'cookie'], function ($, cookie) {
                     },
                     success: function (response) {
                         console.log(response);
-                        if (response[0].user_name) {
+                        if (response[0].user_phone==phone) {
                             location.href = "../html/index.html";
                             cookie.set('user',JSON.stringify(response),1);
-                        } else if(typeof response =='object'){
+                        } else if(response[0].msg=='0'){
                             $('.slip').addClass('show').text('账号或者密码错误，请检查输入！');
                             phone = null;
                             pass = null;
@@ -32,7 +32,6 @@ define(['jquery', 'cookie'], function ($, cookie) {
                 });
             }
         },
-        
     }
 
 });

@@ -58,6 +58,43 @@
   margin-right: 90px;
   padding-top: 20px;
   padding-left: 5px;
+  position: relative;
+}
+#main .container .main_s .denglu-right .yes {
+  display: none;
+  width: 400px;
+  height: 400px;
+  border-radius: 20px;
+  position: absolute;
+  left: 1px ;
+  top: 1px;
+  background-color: palevioletred;
+  z-index: 3;
+  text-align: right;
+}
+#main .container .main_s .denglu-right .yes div {
+  overflow: hidden;
+  margin-top: 180px;
+  height: 30px;
+}
+#main .container .main_s .denglu-right .yes div span {
+  margin: 0 auto;
+  display: block;
+  float: left;
+  font-size: 18px;
+  text-align: center;
+  line-height: 20px;
+  width: 20px ;
+  height: 20px;
+}
+#main .container .main_s .denglu-right .yes a {
+  color: #000;
+  font-size: 17px;
+  text-align: right;
+  padding: 0 20px;
+}
+#main .container .main_s .denglu-right .act {
+  display: block;
 }
 #main .container .main_s .denglu-right p {
   position: relative;
