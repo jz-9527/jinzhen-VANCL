@@ -60,6 +60,7 @@
   display: block;
   float: right;
 }
+#navigation .nav_top a,
 #navigation .nav_top button {
   height: 25px;
   float: right;
@@ -70,9 +71,6 @@
   font-size: 14px;
   border: 0;
   margin-right: 20px;
-}
-#navigation .nav_top button:first-of-type {
-  margin-right: 0;
 }
 #navigation .nav_bot {
   height: 25px;

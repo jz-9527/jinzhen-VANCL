@@ -195,33 +195,60 @@
   width: 68px;
   height: 68px;
   margin-bottom: 20px;
-  background-image: url(../images/joinimages.jpg);
-  background-repeat: no-repeat;
+  position: relative;
   border: 1px solid #8d8d8d;
 }
-#main .commodity_details .image ul .img1 {
-  background-position: 0 0;
+#main .commodity_details .image ul li img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 66px;
+  height: 66px;
+  margin: 0;
 }
-#main .commodity_details .image ul .img2 {
-  background-position: 0 -70px;
-}
-#main .commodity_details .image ul .active {
+#main .commodity_details .image ul .act {
   border-color: red;
 }
-#main .commodity_details .image img {
+#main .commodity_details .image .small {
   width: 400px;
   height: 400px;
   float: left;
   margin: 0 40px;
+  position: relative;
+}
+#main .commodity_details .image .small .lit {
+  display: none;
+  opacity: 0.2;
+  background-color: #effdbe;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: move;
+}
+#main .commodity_details .image .small .smallimg {
+  width: 400px;
+  height: 400px;
+}
+#main .commodity_details .image .small .show {
+  display: block;
 }
 #main .commodity_details .image .big_img {
   width: 400px;
   height: 400px;
   border: 1px solid #ccc;
   display: none;
+  overflow: hidden;
   position: absolute;
   top: -30px;
   right: -360px;
+  z-index: 5;
+}
+#main .commodity_details .image .big_img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 800px;
+  height: 800px;
 }
 #main .commodity_details .image .vip {
   position: absolute;
@@ -354,10 +381,12 @@
 }
 #main .commodity_details .buy .buys ul .now a {
   color: red;
+  user-select: none;
 }
 #main .commodity_details .buy .buys ul .add {
   background-color: #b81c22;
   color: #fff;
+  user-select: none;
 }
 #main .commodity_details .buy .danpin_YhTsTab {
   border-bottom: 1px solid #A20000;

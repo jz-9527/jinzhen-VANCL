@@ -1,0 +1,207 @@
+#header {
+  padding-top: 15px;
+}
+#header .headers {
+  display: block;
+  height: 60px;
+}
+#header .headers .index {
+  display: block;
+  float: left;
+}
+#header .headers .text-muted {
+  display: block;
+  height: 100%;
+  float: right;
+  font-size: 12px;
+  line-height: 60px;
+  font-family: '微软雅黑';
+  margin: 0 50px 0 0;
+}
+#header .headers p {
+  display: block;
+  float: right;
+  height: 100%;
+  margin: 0;
+  margin-right: 50px;
+}
+#header .headers span {
+  display: block;
+  float: left;
+  width: 1px;
+  height: 15px;
+  margin-top: 24px;
+  background-color: #747474;
+}
+#header .headers a {
+  float: left;
+  font-size: 12px;
+  height: 100%;
+  text-decoration: none;
+  color: #747474;
+  line-height: 60px;
+  font-family: '微软雅黑';
+  padding: 0 4px;
+}
+#header .headers .help {
+  display: block;
+  float: right;
+  height: 100%;
+  color: #000;
+  text-align: center;
+  line-height: 60px;
+  font-size: 14px;
+}
+#main .bor {
+  border-top: 1px solid #000;
+}
+#main .bor .now {
+  margin-top: 30px;
+  height: 29px;
+  font-size: 14px;
+  line-height: 29px;
+  background: url(../images/now.gif) no-repeat 1px 1px;
+}
+#main .bor .now span {
+  display: block;
+  float: left;
+  color: #000;
+  text-align: center;
+  margin: 0 45px;
+}
+#main .bor .now span:first-of-type {
+  color: #fff;
+}
+#main .bor .shopping {
+  min-height: 200px;
+}
+#main .bor .shopping span {
+  display: block;
+  text-align: center;
+  margin-top: 100px;
+}
+#main .bor .shopping span .go {
+  display: block;
+  color: #b80000;
+  padding: 0 10px;
+}
+#main .bor .shopping span .go:hover {
+  text-decoration: none;
+}
+#main .bor .shopping p:first-of-type {
+  font-size: 30px;
+  background: url('../images/');
+}
+#main .bor .shopping p {
+  height: 40px;
+  text-align: left;
+  margin: 0;
+}
+#main .bor .shopping p span {
+  margin-top: 0;
+  text-align: left;
+}
+#main .bor .shopping .table {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+#main .bor .shopping .table .first {
+  font-size: 15px;
+  height: 40px;
+  background: #dcdcdc;
+}
+#main .bor .shopping .table .first span {
+  float: left;
+  display: block;
+  width: 8%;
+  height: 100%;
+  line-height: 40px;
+  text-align: center;
+}
+#main .bor .shopping .table .first .two {
+  width: 44%;
+}
+#main .bor .shopping .table .shopp {
+  padding: 15px;
+}
+#main .bor .shopping .table .shopp .list {
+  overflow: hidden;
+  background-color: #f8f8f8;
+}
+#main .bor .shopping .table .shopp .list span {
+  margin: 0;
+  height: 35px;
+}
+#main .bor .shopping .table .shopp .list .box2 {
+  float: left;
+  margin: 36px 60px 10px;
+}
+#main .bor .shopping .table .shopp .list .img {
+  float: left;
+  width: 60px;
+  height: 60px;
+  margin: 10px 35px 10px;
+}
+#main .bor .shopping .table .shopp .list .name {
+  float: left;
+  font-size: 14px;
+  margin: 32px 224px 10px 20px;
+}
+#main .bor .shopping .table .shopp .list .size {
+  float: left;
+  font-size: 16px;
+  margin: 32px 10px 10px;
+}
+#main .bor .shopping .table .shopp .list .money {
+  float: left;
+  font-size: 20px;
+  margin: 28px 24px 10px;
+}
+#main .bor .shopping .table .shopp .list .num {
+  float: left;
+  width: 60px;
+  margin: 28px 0 10px 0;
+}
+#main .bor .shopping .table .shopp .list .sp {
+  float: left;
+  margin-top: 28px;
+  margin: 26px 50px 20px;
+}
+#main .bor .shopping .table .shopp .list .moneys {
+  float: left;
+  font-size: 20px;
+  margin-top: 26px;
+}
+#main .bor .shopping .table .shopp .list .btn {
+  float: left;
+  margin-top: 26px;
+  margin-left: 30px;
+}
+#footer {
+  font-size: 14px;
+  color: #000;
+  text-align: center;
+}
+#footer a {
+  display: inline-block;
+  height: 45px;
+  width: 114px;
+  margin: 0 5px;
+  background-image: url(../images/login_spritesbg.png);
+  background-repeat: no-repeat;
+}
+#footer .f1 {
+  background-position: 0 -401px;
+}
+#footer .f2 {
+  width: 157px;
+  background-position: 0 -448px;
+}
+#footer .f3 {
+  width: 98px;
+  background-position: 0 -493px;
+}
+#footer .f4 {
+  background-position: -100px -493px;
+}

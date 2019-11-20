@@ -193,35 +193,63 @@
                     width: 68px;
                     height: 68px;
                     margin-bottom: 20px;
-                    background-image: url(../images/joinimages.jpg);
-                    background-repeat: no-repeat;
+                    position: relative;
                     border: 1px solid rgb(141, 141, 141);
+                    img{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 66px;
+                        height: 66px;
+                        margin: 0;
+                    }
                 }
-                .img1{
-                    background-position: 0 0;
-                }
-                .img2{
-                    background-position:0 -70px;
-                }
-                .active{
+                .act{
                     border-color: red;
                 }
             }
-            img{
-                width: 400px;
-                height: 400px;
-                float: left;
-                margin: 0 40px;
+            .small{
+                    width: 400px;
+                    height: 400px;
+                    float: left;
+                    margin: 0 40px;
+                    position: relative;
+                    .lit{
+                        display: none;
+                        opacity: 0.2;
+                        background-color: rgb(239, 253, 190);
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        cursor: move;
+                    }
+                    .smallimg{
+                        width: 400px;
+                        height: 400px;
+                    }
+                    .show{
+                        display: block;
+                    }
             }
             .big_img{
                 width: 400px;
                 height: 400px;
                 border: 1px solid #ccc;
                 display: none;
+                overflow: hidden;
                 position: absolute;
                 top: -30px;
                 right: -360px;
+                z-index: 5;
+                img{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 800px;
+                    height: 800px;
+                }
             }
+            
             .vip{
                 position: absolute;
                 width: 400px;
@@ -351,11 +379,13 @@
                         background: rgb(247, 171, 175);
                         a{
                             color: red;
+                            user-select: none;
                         }
                     }
                     .add{
                         background-color: rgb(184, 28, 34);
                         color: #fff;
+                        user-select: none;
                     }
                 }
             }

@@ -17,7 +17,7 @@ define(['jquery'], function ($){
                             val.com_model=' ';
                         }
                         comm+=`
-                            <a href="./commodityDetails.html?id=${val.com_id}">
+                            <a href="./commodityDetails.html?id=commodity#${val.com_id}">
                                 <img src="../images/${val.com_img}" alt="..">
                                 <span class="commodity_name">${val.com_type}${val.com_name}&nbsp;${val.com_texture}&nbsp${val.com_gender}&nbsp;${val.com_model}&nbsp;${val.com_color}&nbsp;</span>
                                 <del>￥${val.original_cost}</del>
@@ -42,7 +42,7 @@ define(['jquery'], function ($){
                     let newcomm='';
                     res.forEach(val=>{
                         newcomm+=`
-                            <a href="./commodityDetails.html">
+                            <a href="./commodityDetails.html?id=new#${val.new_id}">
                                 <img src="../images/${val.new_img}" alt="..">
                             </a>
                         `;
