@@ -17,7 +17,7 @@
                 <img src="../images/logo18546.png" alt="凡客诚品">
             </a>
 
-            
+
             <a href="#" class="help">帮助中心</a>
             <p>
                 <a href="./user.html" class="register">登录</a>
@@ -36,12 +36,14 @@
                 <span>3.成功提交订单</span>
             </div>
             <div class="shopping">
-                <span class="hidden">您的购物车空空如也...<a href="./index.html" class="go">去选购..</a></span>
-                <p>我的购物车</p>
-                <p><span class="text-danger">温馨提示:</span>1.选购清单中的商品无法保留库存，请您及时结算。2.商品的价格和库存将以订单提交时为准。3.促销活动满减优惠将均摊至商品小计中。</p>
-                <div class="table">
+                <span class="nul hidden">您的购物车空空如也...<a href="./index.html" class="go">去选购..</a></span>
+                <p class="hidden">我的购物车</p>
+                <p class="hidden"><span
+                        class="text-danger">温馨提示:</span>1.选购清单中的商品无法保留库存，请您及时结算。2.商品的价格和库存将以订单提交时为准。3.促销活动满减优惠将均摊至商品小计中。
+                </p>
+                <div class="hidden table">
                     <p class="first">
-                        <span> <input type="checkbox" class="box1"> 全选</span>
+                        <span> <input type="checkbox" checked class="box2"> 全选</span>
                         <span class="two">商品名称</span>
                         <span>尺寸</span>
                         <span>单价</span>
@@ -51,23 +53,26 @@
                         <span>操作</span>
                     </p>
                     <div class="shopp">
-                        <div class="list">
-                            <input type="checkbox" class="box2">
-                            <img src="../images/discounts1.jpg" alt="" class="img">
-                            <span class="name">凡客轻绒羽绒服</span>
-                            <span class="size">XL</span>
-                            <span class="money">￥398.00</span>
-                            <input type="number" class="num" value="1">
-                            <span class="sp">-</span>
-                            <span class="moneys">￥398.00</span>
-                            <button class="btn">删除</button>
-                        </div>
-                        
                     </div>
-                <div>
-                    
-            </div>
-        </div>
+                    <div class="settle_accounts ">
+                        <div class="tp">
+                            <p>
+                                <input type="checkbox" id="box" checked class="box2">
+                                <label for="box">全选</label>
+                                <button class="rem">删除</button>
+                                <span class="nums">数量总计:1件</span>
+                                <span class="zk hidden">您目前可以享受全场购物免运费</span>
+                            </p>
+                        </div>
+                        <div class="bp">
+                            <span>产品金额总计（不含运费）:</span>
+                            <span class="monyes" >￥399</span>
+                            
+                            <a href="#">去结算》》</a>
+                            <a href="../html/index.html">《《继续购物</a>
+                        </div>
+                    </div>
+                </div>
     </main>
 
     <footer id="footer">
@@ -81,6 +86,10 @@
             <a href="#" class="f4"></a>
         </div>
     </footer>
+
+    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../../node_modules/requirejs/require.js" data-main="../js/shopping.js"></script>
 </body>
 
 </html>

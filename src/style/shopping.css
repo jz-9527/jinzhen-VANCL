@@ -131,52 +131,125 @@
 }
 #main .bor .shopping .table .shopp .list span {
   margin: 0;
-  height: 35px;
+  width: 10%;
 }
 #main .bor .shopping .table .shopp .list .box2 {
   float: left;
-  margin: 36px 60px 10px;
+  width: 6%;
+  margin-top: 23px;
 }
 #main .bor .shopping .table .shopp .list .img {
   float: left;
   width: 60px;
   height: 60px;
-  margin: 10px 35px 10px;
+  margin: 0 10px;
 }
 #main .bor .shopping .table .shopp .list .name {
   float: left;
   font-size: 14px;
-  margin: 32px 224px 10px 20px;
+  width: 20%;
+  margin-left: 60px;
+  line-height: 60px;
 }
 #main .bor .shopping .table .shopp .list .size {
   float: left;
   font-size: 16px;
-  margin: 32px 10px 10px;
+  width: 6%;
+  margin-left: 156px;
+  line-height: 60px;
 }
 #main .bor .shopping .table .shopp .list .money {
   float: left;
   font-size: 20px;
-  margin: 28px 24px 10px;
+  width: 6%;
+  margin-left: 15px;
+  line-height: 60px;
 }
 #main .bor .shopping .table .shopp .list .num {
   float: left;
-  width: 60px;
-  margin: 28px 0 10px 0;
+  margin-left: 50px;
+  width: 5%;
+  margin-top: 20px;
 }
 #main .bor .shopping .table .shopp .list .sp {
   float: left;
-  margin-top: 28px;
-  margin: 26px 50px 20px;
+  width: 5%;
+  margin-left: 10px;
+  line-height: 60px;
 }
 #main .bor .shopping .table .shopp .list .moneys {
   float: left;
   font-size: 20px;
-  margin-top: 26px;
+  width: 10%;
+  margin-left: 10px;
+  line-height: 60px;
 }
 #main .bor .shopping .table .shopp .list .btn {
   float: left;
-  margin-top: 26px;
   margin-left: 30px;
+  line-height: 25px;
+  margin-top: 10px;
+}
+#main .bor .settle_accounts {
+  overflow: hidden;
+  padding: 30px 10px 20px;
+  border: 1px solid #ebe5bb;
+  background-color: #fffef5;
+}
+#main .bor .settle_accounts .tp {
+  width: 100%;
+}
+#main .bor .settle_accounts .tp p > label {
+  font-size: 16px;
+  font-weight: 400;
+}
+#main .bor .settle_accounts .tp p > .rem {
+  border: 0;
+  background: #fffef5;
+  font-size: 14px;
+}
+#main .bor .settle_accounts .tp p > span {
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+#main .bor .settle_accounts .tp p > .zk {
+  font-size: 14px;
+  font-weight: 700;
+  color: #b80000;
+}
+#main .bor .settle_accounts .bp {
+  width: 100%;
+}
+#main .bor .settle_accounts .bp > span {
+  display: inline-block;
+  margin-top: 30px;
+}
+#main .bor .settle_accounts .bp .monyes {
+  margin-top: 0;
+  font-size: 30px;
+  color: #b80000;
+}
+#main .bor .settle_accounts .bp a {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  color: #7c7c7c;
+  font-size: 16px;
+  padding: 10px;
+  float: right;
+  margin-left: 20px;
+  margin-top: 3px;
+  background-color: #dddddd;
+}
+#main .bor .settle_accounts .bp a:first-of-type {
+  color: #fff;
+  font-size: 20px;
+  margin-top: 0;
+  background-color: #ad0404;
+}
+#main .bor .settle_accounts .bp a:hover {
+  text-decoration: none;
 }
 #footer {
   font-size: 14px;

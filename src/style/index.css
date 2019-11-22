@@ -52,6 +52,9 @@
   text-align: right;
   height: 25px;
 }
+#navigation .nav_top .car:hover {
+  text-decoration: none;
+}
 #navigation .nav_top .seek {
   text-align: center;
   width: 250px;
@@ -189,13 +192,13 @@
   top: 18px;
 }
 #main .miaosha .hour {
-  left: 969px;
+  left: 993px;
 }
 #main .miaosha .minute {
-  left: 1027px;
+  left: 1053px;
 }
 #main .miaosha .second {
-  left: 1090px;
+  left: 1116px;
 }
 #main .discounts {
   width: 100%;
