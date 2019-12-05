@@ -113,11 +113,10 @@
   position: absolute;
   top: 25px;
   width: 100%;
-  display: none;
+  height: 0;
   overflow: hidden;
   transition: all 1s;
   z-index: 99;
-  background-color: #fff;
 }
 #navigation .nav_1 li .nav_2 li {
   clear: both;
@@ -127,6 +126,7 @@
   line-height: 30px;
   border: 0;
   padding: 0;
+  background-color: #fff;
 }
 #navigation .nav_1 li .nav_2 li:first-child {
   height: 5px;
@@ -134,7 +134,7 @@
   background-color: #cf0b0b;
 }
 #navigation .nav_1 li:hover > .nav_2 {
-  display: block;
+  height: 400px;
 }
 #lunbo ol li {
   border: 0;

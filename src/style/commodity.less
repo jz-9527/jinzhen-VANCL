@@ -105,11 +105,12 @@
                 position: absolute;
                 top:25px;
                 width: 100%;
-                display: none;
+                // display: none;
+                height: 0;
                 overflow: hidden;
                 transition: all 1s;
                 z-index: 99;
-                background-color: #fff;
+                
                 li{
                     clear: both;
                     text-align: center;
@@ -118,6 +119,7 @@
                     line-height:30px;
                     border: 0;
                     padding: 0;
+                    background-color: #fff;
                 }
                 li:first-child{
                     height: 5px;
@@ -128,7 +130,7 @@
             
         }
         li:hover > .nav_2{
-            display: block;
+            height: 500px;
         }
     }
     

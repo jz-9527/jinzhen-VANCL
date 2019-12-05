@@ -15,7 +15,7 @@ require(['jquery', 'commoditys'], function ($, commoditys) {
 
 require(['jquery', 'cookie'], function ($, cookie) {
     //检查账号
-    let cook = cookie.get('user'); 
+    let cook = cookie.get('user');
     if (cook) {
         let user = JSON.parse(cook)[0].user_phone;
         $('.register').html('退出登录')
@@ -23,18 +23,18 @@ require(['jquery', 'cookie'], function ($, cookie) {
             .attr('href', 'javascript:void(0)')
             .on('click', function () {
                 cookie.remove('user');
-                location.href='./index.html';
+                location.href = './index.html';
             })
             ;
-        $('.text-muted').html('欢迎光临:'+user);
+        $('.text-muted').html('欢迎光临:' + user);
 
         $('.login').html('切换用户')
-        .css('color', 'red')
-        .attr('href', './user.html')
-        .on('click', function () {
-            cookie.remove('user');
-        });
-    }else{
+            .css('color', 'red')
+            .attr('href', './user.html')
+            .on('click', function () {
+                cookie.remove('user');
+            });
+    } else {
         console.log('无账号登录');
     }
 });
@@ -114,7 +114,7 @@ require(['jquery', 'cookie'], function ($, cookie) {
                 commodity.forEach(val => {
                     val.name == comm.name ? val.num = comm.num : null;
                 });
-                
+
             } else {
                 commodity.push(comm);
             }
@@ -123,11 +123,14 @@ require(['jquery', 'cookie'], function ($, cookie) {
             commodity.push(comm);
         }
         cookie.set('commodity', JSON.stringify(commodity), 1);
+        location.reload();
     });
 });
 
 //购物车按钮
-require(['jquery','cookie'],function ($,cookie){
-    let cook=JSON.parse(cookie.get('commodity'));
-    $('.car').text('购物车（'+cook.length+')');
+require(['jquery', 'cookie'], function ($, cookie) {
+    if (cookie.get('commodity')) {
+        let cook = JSON.parse(cookie.get('commodity'));
+        $('.car').text('购物车（' + cook.length + ')');
+    }
 });

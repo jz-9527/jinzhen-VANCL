@@ -9,8 +9,7 @@ requirejs.config({
 //检测登录状态
 require(['jquery', 'cookie'], function ($, cookie) {
     //检查账号
-    let cook = cookie.get('user');
-    if (cook) {
+    if (cook = cookie.get('user')) {
         let user = JSON.parse(cook)[0].user_phone;
         $('.register').html('退出登录')
             .css('color', 'red')
@@ -35,10 +34,10 @@ require(['jquery', 'cookie'], function ($, cookie) {
 
 //购物车渲染
 require(['jquery', 'cookie'], function ($, cookie) {
-    let cook = cookie.get('commodity');
-    if (cook) {
+    if (cookie.get('commodity') && cookie.get('commodity') != '[]') {
+        cook = cookie.get('commodity');
         $('.nul').addClass('hidden');
-        $('.shopping>p,div').removeClass('hidden');
+        $('.shopping').children('p,div').removeClass('hidden');
         cook = JSON.parse(cook);
         let str = '';
         cook.forEach(val => {
@@ -60,6 +59,7 @@ require(['jquery', 'cookie'], function ($, cookie) {
         $('.shopp').html(str);
 
     } else {
+        $('.shopping').children('p,div').addClass('hidden');
         $('.nul').removeClass('hidden');
     }
 
@@ -105,12 +105,36 @@ require(['jquery', 'cookie'], function ($, cookie) {
 
 //显示总价和商品总件数
 require(['jquery', 'cookie'], function ($, cookie) {
-    let cook=JSON.parse(cookie.get('commodity'));
-    let money = $('.moneys');
-    let count =0;
-    money.each(function () {
-        count+=Number(Number(this.innerHTML.substr(1)).toFixed(2));
-    });
-    $('.nums').text('数量总计:'+cook.length+'件');
-    $('.monyes').not('.list>.monyes').text('￥:'+count.toFixed(2));
+    if (cookie.get('commodity')) {
+        let box2 = $('.list>.box2');
+        moneys();
+        box2.on('click', function () {
+            moneys();
+        });
+    }
+    function moneys() {
+        let money = $('.moneys');
+        let count = 0;
+        let len = 0;
+        let box2 = $('.list>.box2');
+        money.each(function (i) {
+            if (box2.eq(i).prop('checked')) {
+                count += Number(Number(this.innerHTML.substr(1)).toFixed(2));
+                len++;
+            }
+        });
+        $('.nums').text('数量总计:' + len + '件');
+        $('.monyes').not('.list>.monyes').text('￥:' + count.toFixed(2));
+    }
 });
+
+//结算
+require(['jquery', 'cookie'], function ($, cookie) {
+    $('.account').on('click', function () {
+        if(cook = cookie.get('user')){
+            location.href='../html/sham.html';
+        }else{
+            location.href='../html/user.html';
+        }
+    });
+})
